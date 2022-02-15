@@ -1,3 +1,26 @@
-h1 {
-  color: aqua;
+:root {
+  --main-color: #d35d6e;
+  --text-color: #efb08c;
+}
+
+.navbar-custom {
+  background-color: var(--main-color);
+}
+
+.logo-img {
+  max-width: 50px;
+}
+
+button.navbar-button:focus {
+  outline-style: none;
+  box-shadow: none;
+}
+
+.nav-link-custom {
+  color: var(--text-color);
+}
+
+.nav-link-custom:hover {
+  color: #5aa469;
+  text-decoration: underline;
 }
