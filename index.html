@@ -23,8 +23,8 @@
     <title>Jessica Molinari - Front-end Developer</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-custom p-0 fixed-top">
-      <div class="container-fluid ms-5 me-5">
+    <nav class="navbar navbar-expand-md navbar-custom p-0 sticky-md-top">
+      <div class="container-fluid ms-5 me-5 custom-container">
         <a class="navbar-brand" href="#">
           <img src="/img/logo.png" alt="logo-mug" class="img-fluid logo-img" />
           <span class="logo-name">Jessica Molinari</span>
@@ -48,11 +48,14 @@
             <a
               class="nav-link ps-4 pe-4 nav-link-custom"
               aria-current="page"
-              href="/"
+              href="#homepage"
               title="Home"
               >Home</a
             >
-            <a class="nav-link ps-4 pe-4 nav-link-custom" href="#" title="About"
+            <a
+              class="nav-link ps-4 pe-4 nav-link-custom"
+              href="#about"
+              title="About"
               >About</a
             >
             <a
@@ -71,18 +74,30 @@
         </div>
       </div>
     </nav>
-    <section id="homepage">
-      <div class="meeting-me">
-        <h2 class="introduction">Hello, I'm</h2>
-        <h1 class="my-name">Jessica Molinari</h1>
-        <h2 class="introduction">Front-end developer, based in London</h2>
-      </div>
-    </section>
-    <section id="about-me">
-      <div class="my-picture">
-        <h2 class="presentation">Who is Jessica?</h2>
-        <img src="#" alt="my photo" class="img-fluid my-photo" />
-      </div>
+    <section class="scroller">
+      <section id="homepage">
+        <div class="meeting-me">
+          <h2 class="introduction">Hello, I'm</h2>
+          <h1 class="my-name">Jessica Molinari</h1>
+          <h2 class="introduction">Front-end developer, based in London</h2>
+        </div>
+      </section>
+      <section id="about">
+        <h2 class="presentation">About Jessica</h2>
+        <div class="about-me">
+          <img
+            src="/img/IMG_6897.png"
+            alt="my photo"
+            class="img-fluid my-photo"
+          />
+          <p class="about-jessica">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
+            impedit deleniti eaque eius quo reiciendis illum eligendi, sint
+            laudantium animi modi sed pariatur, ullam magni quam cupiditate
+            harum. Sit, tempore?
+          </p>
+        </div>
+      </section>
     </section>
   </body>
 </html>
