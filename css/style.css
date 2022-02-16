@@ -65,6 +65,7 @@ button.navbar-button:focus {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .scroller section {
@@ -114,11 +115,21 @@ button.navbar-button:focus {
 }
 
 @media (max-width: 767px) {
+  .navbar-custom {
+    position: sticky;
+  }
   .custom-container {
     margin: 0 !important;
+  }
+
+  .about-me {
+    align-items: center;
+    flex-direction: column;
   }
 
   .my-photo {
     max-width: 150px !important;
   }
 }
+
+/* <link rel="icon" href="/favicon-32x32.png?v=a408904f50fcbddfab51c5d0e8260f5f"/> */
