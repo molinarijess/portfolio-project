@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --main-color: #d35d6e;
-  --text-color: #efb08c;
-  --emphasize-color: #5aa469;
+  --main-color: #5aa469;
+  --link-color: #efb08c;
+  --text-color: #f8d49d;
+  --emphasize-color: #d35d6e;
   --title-font: "IBM Plex Serif", serif;
   --text-font: "Work Sans", sans-serif;
 }
@@ -33,7 +34,7 @@ button.navbar-button:focus {
 }
 
 .navbar-custom {
-  background-color: var(--main-color);
+  background-color: var(--emphasize-color);
 }
 
 .logo-img {
@@ -46,11 +47,12 @@ button.navbar-button:focus {
   font-family: var(--text-font);
   font-weight: 400;
   text-transform: lowercase;
+  transition: 300ms ease-in-out;
   word-spacing: 10px;
 }
 
 .nav-link-custom:hover {
-  color: var(--emphasize-color);
+  color: var(--link-color);
   text-decoration: underline;
 }
 
@@ -62,7 +64,7 @@ button.navbar-button:focus {
 }
 
 .my-name {
-  color: #5aa469;
+  color: var(--emphasize-color);
   font-family: var(--title-font);
   font-size: 50px;
   font-style: italic;
