@@ -1,6 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --main-color: #d35d6e;
   --text-color: #efb08c;
+  --emphasize-color: #5aa469;
+  --title-font: "IBM Plex Serif", serif;
+  --text-font: "Work Sans", sans-serif;
+}
+
+section.homepage {
+  background: linear-gradient(to bottom left, #efb08c 50%, #f8d49d 50%);
+  display: flex;
+  height: calc(100vh - 40px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+span.logo-name {
+  color: var(--text-color);
+  cursor: none;
+  font-family: var(--title-font);
+  padding-left: 12px;
+  text-decoration: none;
+  text-transform: lowercase;
+  word-spacing: 5px;
+}
+
+button.navbar-button:focus {
+  box-shadow: none;
+  outline-style: none;
 }
 
 .navbar-custom {
@@ -8,19 +37,34 @@
 }
 
 .logo-img {
+  cursor: none;
   max-width: 50px;
-}
-
-button.navbar-button:focus {
-  outline-style: none;
-  box-shadow: none;
 }
 
 .nav-link-custom {
   color: var(--text-color);
+  font-family: var(--text-font);
+  font-weight: 400;
+  text-transform: lowercase;
+  word-spacing: 10px;
 }
 
 .nav-link-custom:hover {
-  color: #5aa469;
+  color: var(--emphasize-color);
   text-decoration: underline;
+}
+
+.introduction {
+  color: var(--main-color);
+  font-family: var(--text-font);
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.my-name {
+  color: #5aa469;
+  font-family: var(--title-font);
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
 }
