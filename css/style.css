@@ -9,13 +9,18 @@
   --text-font: "Work Sans", sans-serif;
 }
 
-section.homepage {
+section#homepage {
   background: linear-gradient(to bottom left, #efb08c 50%, #f8d49d 50%);
   display: flex;
   height: calc(100vh - 40px);
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+section#about-me {
+  background: var(--text-color);
+  height: calc(100vh - 40px);
 }
 
 span.logo-name {
@@ -69,4 +74,15 @@ button.navbar-button:focus {
   font-size: 50px;
   font-style: italic;
   font-weight: 700;
+}
+
+.presentation {
+  color: var(--emphasize-color);
+  font-family: var(--title-font);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.my-photo {
+  border: 10px;
 }
