@@ -29,7 +29,7 @@ section#projects {
 }
 
 section#contact {
-  background-color: var(--main-color);
+  background-color: var(--text-color);
   height: 100vh;
 }
 
@@ -72,7 +72,7 @@ button.navbar-button:focus {
 }
 
 .scroller {
-  height: 100vh;
+  height: calc(100vh - 41px);
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
