@@ -135,6 +135,16 @@ button.navbar-button:focus {
   padding: 20px;
 }
 
+.projects-display {
+  height: 100vh;
+}
+
+.projects-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 @media (max-width: 767px) {
   .navbar-custom {
     position: sticky;
