@@ -24,8 +24,7 @@ section#about {
 }
 
 section#projects {
-  background: var(--link-color);
-  height: calc(100vh - 41px);
+  background-color: var(--text-color);
 }
 
 section#contact {
@@ -127,22 +126,50 @@ button.navbar-button:focus {
   padding-left: 10px;
 }
 
+.grid-custom {
+  display: flex;
+  align-items: center;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .project-name {
   color: var(--emphasize-color);
   font-family: var(--title-font);
   font-size: 28px;
   font-weight: 300;
-  padding: 20px;
-}
-
-.projects-display {
-  height: 100vh;
+  text-align: center;
 }
 
 .projects-img {
-  width: 100%;
+  border-radius: 10px;
   height: 100%;
   object-fit: contain;
+  width: 100%;
+}
+
+.about-project {
+  color: var(--link-color);
+  font-family: var(--text-font);
+  font-size: 14px;
+}
+
+.project-link {
+  background: var(--link-color);
+  border-radius: 50px;
+  color: var(--emphasize-color);
+  font-size: 14px;
+  padding: 15px 35px;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: var(--main-color);
+  text-decoration: underline;
 }
 
 @media (max-width: 767px) {
@@ -160,5 +187,9 @@ button.navbar-button:focus {
 
   .my-photo {
     max-width: 150px !important;
+  }
+
+  .projects-img {
+    display: none;
   }
 }
