@@ -127,6 +127,14 @@ button.navbar-button:focus {
   padding-left: 10px;
 }
 
+.project-name {
+  color: var(--emphasize-color);
+  font-family: var(--title-font);
+  font-size: 28px;
+  font-weight: 300;
+  padding: 20px;
+}
+
 @media (max-width: 767px) {
   .navbar-custom {
     position: sticky;
@@ -144,5 +152,3 @@ button.navbar-button:focus {
     max-width: 150px !important;
   }
 }
-
-/* <link rel="icon" href="/favicon-32x32.png?v=a408904f50fcbddfab51c5d0e8260f5f"/> */
