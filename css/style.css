@@ -143,6 +143,7 @@ button.navbar-button:focus {
   display: flex;
   line-height: 3;
   text-align: center;
+  width: 26vw;
 }
 
 .social-link {
@@ -153,11 +154,6 @@ button.navbar-button:focus {
 
 .social-link:hover {
   color: var(--link-color);
-}
-
-.email-link {
-  position: relative;
-  left: 15px;
 }
 
 .link-name {
@@ -263,5 +259,9 @@ button.navbar-button:focus {
 
   .project-link {
     padding: 8px 16px;
+  }
+
+  .social-custom {
+    width: 60vw;
   }
 }
