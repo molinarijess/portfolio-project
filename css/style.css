@@ -109,7 +109,9 @@ button.navbar-button:focus {
 
 .about-me {
   display: flex;
+  height: 75%;
   justify-content: center;
+  align-items: center;
 }
 
 .my-photo {
@@ -162,14 +164,16 @@ button.navbar-button:focus {
   background: var(--link-color);
   border-radius: 50px;
   color: var(--emphasize-color);
-  font-size: 14px;
+  font-size: 12px;
   padding: 15px 35px;
   text-decoration: none;
+  transition: 300ms ease-in-out;
 }
 
 .project-link:hover {
-  color: var(--main-color);
-  text-decoration: underline;
+  background: var(--emphasize-color);
+  color: var(--text-color);
+  font-size: 14px;
 }
 
 @media (max-width: 767px) {
@@ -180,16 +184,41 @@ button.navbar-button:focus {
     margin: 0 !important;
   }
 
+  .introduction,
+  .presentation,
+  .social,
+  .project-page,
+  .project-name {
+    font-size: 20px;
+  }
+
+  .my-name {
+    font-size: 40px;
+  }
+
   .about-me {
-    align-items: center;
+    display: flex;
     flex-direction: column;
+    height: fit-content;
   }
 
   .my-photo {
     max-width: 150px !important;
   }
 
+  .about-jessica {
+    font-size: 14px;
+  }
+
+  .about-project {
+    text-align: center;
+  }
+
   .projects-img {
     display: none;
+  }
+
+  .project-link {
+    padding: 8px 16px;
   }
 }
