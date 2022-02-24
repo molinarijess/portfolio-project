@@ -166,7 +166,8 @@ button.navbar-button:focus {
 }
 
 .social-link:hover {
-  color: var(--link-color);
+  color: var(--text-color);
+  opacity: 0.9;
 }
 
 .link-name {
