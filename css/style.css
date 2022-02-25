@@ -30,6 +30,7 @@ section#projects {
 section#contact {
   background-color: var(--link-color);
   height: 100vh;
+  position: relative;
 }
 
 span.logo-name {
@@ -45,6 +46,24 @@ span.logo-name {
 button.navbar-button:focus {
   box-shadow: none;
   outline-style: none;
+}
+
+footer {
+  color: var(--text-color);
+  font-family: var(--text-font);
+  font-size: 12px;
+  height: 65px;
+  opacity: 0.8;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+a.github-repository {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
 }
 
 .navbar-custom {
@@ -136,7 +155,8 @@ button.navbar-button:focus {
   transition: 0.3s ease-in-out;
 }
 
-.project-link:hover {
+.project-link:hover,
+.github-repository:hover {
   color: var(--emphasize-color);
   text-decoration: underline;
 }
