@@ -178,6 +178,13 @@ a.github-repository {
   text-transform: lowercase;
 }
 
+@media (max-width: 767px) {
+  .social-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .social-custom {
   align-items: center;
   display: flex;
