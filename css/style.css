@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --main-color: #5aa469;
-  --link-color: #efb08c;
-  --text-color: #f8d49d;
-  --emphasize-color: #d35d6e;
+  --main-color: #809e58;
+  --link-color: #674172;
+  --text-color: #40184b;
+  --emphasize-color: #af7790;
   --title-font: "IBM Plex Serif", serif;
   --text-font: "Work Sans", sans-serif;
 }
 
 section#homepage {
-  background: linear-gradient(to bottom left, #efb08c 50%, #f8d49d 50%);
+  background: linear-gradient(to bottom left, #674172 50%, #40184b 50%);
   display: flex;
   height: calc(100vh - 41px);
   justify-content: center;
@@ -24,7 +24,7 @@ section#about {
 }
 
 section#projects {
-  background-color: var(--text-color);
+  background-color: var(--emphasize-color);
 }
 
 section#contact {
@@ -35,7 +35,6 @@ section#contact {
 
 span.logo-name {
   color: var(--text-color);
-  cursor: none;
   font-family: var(--title-font);
   padding-left: 12px;
   text-decoration: none;
@@ -211,10 +210,10 @@ a.github-repository {
 }
 
 .project-name {
-  color: var(--emphasize-color);
+  color: var(--text-color);
   font-family: var(--title-font);
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -232,18 +231,18 @@ a.github-repository {
 }
 
 .project-link-btn {
-  background: var(--link-color);
+  background: var(--text-color);
   border-radius: 50px;
   color: var(--emphasize-color);
-  font-size: 12px;
+  font-size: 14px;
   padding: 15px 35px;
   text-decoration: none;
   transition: 300ms ease-in-out;
 }
 
 .project-link-btn:hover {
-  background: var(--emphasize-color);
-  color: var(--text-color);
+  background: var(--link-color);
+  color: var(--emphasize-color);
   font-size: 14px;
 }
 
